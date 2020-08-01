@@ -29,7 +29,9 @@ My API was hosted on my local machine.
 
 In your IIS management, add a new website with an URL pointing at http://api.bookshop.lab101.com. It can be something else. None of the features in the API are hard coded to use this URL.
 
-Edit your hosts file to point 127.0.0.1 to point at http://api.bookshop.lab101.com (or your alterntaive URL).
+Edit your hosts file to point 127.0.0.1 to point at http://api.bookshop.lab101.com (or your alterntaive URL). Add the following line
+
+127.0.0.1 api.bookshop.lab101.com
 
 In the web.config, change the database connection string, BookshopAPIDB, to your database set up. This can mean changing the data source, username or password.
 
