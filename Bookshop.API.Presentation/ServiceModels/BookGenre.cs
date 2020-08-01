@@ -6,11 +6,10 @@ using System.Threading.Tasks;
 
 namespace Bookshop.API.Presentation.ServiceModels
 {
-    public class BookDTO
+    public class BookGenre
     {
+        public int BookGenreID { get; set; }
+        public int GenreID { get; set; }
         public int BookID { get; set; }
-        public string Title { get; set; }
-        public int PublishedYear { get; set; }
-
     }
 }

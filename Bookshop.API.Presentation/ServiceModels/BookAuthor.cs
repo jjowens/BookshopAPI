@@ -6,9 +6,10 @@ using System.Threading.Tasks;
 
 namespace Bookshop.API.Presentation.ServiceModels
 {
-    public class GenreDTO
+    public class BookAuthor
     {
-        public int GenreID { get; set; }
-        public string GenreName { get; set; }
+        public int BookAuthorID { get; set; }
+        public int BookID { get; set; }
+        public int AuthorID { get; set; }
     }
 }

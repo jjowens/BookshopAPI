@@ -43,20 +43,22 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Models\Author.cs" />
-    <Compile Include="ServiceModels\AuthorDTO.cs" />
+    <Compile Include="ServiceModels\APIResponse.cs" />
+    <Compile Include="ServiceModels\Author.cs" />
     <Compile Include="Models\Book.cs" />
-    <Compile Include="ServiceModels\BookAuthorDTO.cs" />
+    <Compile Include="ServiceModels\BookAuthor.cs" />
     <Compile Include="Models\BookAuthors.cs" />
     <Compile Include="Models\BookDetails.cs" />
-    <Compile Include="ServiceModels\BookDetailsDTO.cs" />
-    <Compile Include="ServiceModels\BookDTO.cs" />
-    <Compile Include="ServiceModels\BookGenreDTO.cs" />
+    <Compile Include="ServiceModels\BookDetails.cs" />
+    <Compile Include="ServiceModels\Book.cs" />
+    <Compile Include="ServiceModels\BookGenre.cs" />
     <Compile Include="Models\Branch.cs" />
     <Compile Include="Models\BranchStock.cs" />
     <Compile Include="Models\BranchStockDetails.cs" />
     <Compile Include="Models\Genre.cs" />
-    <Compile Include="ServiceModels\GenreDTO.cs" />
+    <Compile Include="ServiceModels\Genre.cs" />
     <Compile Include="Models\SearchQuery.cs" />
+    <Compile Include="ServiceModels\Search.cs" />
     <Compile Include="ServiceModels\ServiceResponse.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

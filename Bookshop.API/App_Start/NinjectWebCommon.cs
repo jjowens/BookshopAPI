@@ -66,7 +66,7 @@ namespace Bookshop.API.App_Start
         {
             kernel.Bind<IBookshopService>().To<BookshopService>();
             kernel.Bind<IMapperService>().To<MapperService>();
-            kernel.Bind<IDatabaseService>().To<Data>();
+            kernel.Bind<IDatabaseService>().To<DatabaseService>();
         }
     }
 }
