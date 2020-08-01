@@ -9,30 +9,39 @@ namespace Bookshop.API.Services.Interfaces
 {
     public interface IBookshopService
     {
-        BookDetailsDTO GetBookDetails(int bookID);
-        IEnumerable<BookDetailsDTO> GetBooksByAuthor(int authorID);
+        BookDetails GetBookDetails(int bookID);
+        IEnumerable<BookDetails> GetBooksByAuthorID(int authorID);
 
-        IEnumerable<BookDetailsDTO> GetBooksByGenre(int genreID);
+        IEnumerable<BookDetails> GetBooksByAuthor(string firstName, string lastName);
 
-        AuthorDTO GetAuthor(int authorID);
+        IEnumerable<BookDetails> GetBooksByGenre(int genreID);
 
-        IEnumerable<GenreDTO> GetGenres();
+        Author GetAuthor(int authorID);
 
-        IEnumerable<BookDetailsDTO> GetAllBooks(int booksLimit);
+        IEnumerable<Genre> GetGenres();
 
-        ServiceResponse SaveBookDetails(BookDetailsDTO bookDetails);
-        ServiceResponse SaveAuthor(AuthorDTO author);
-        ServiceResponse SaveBookGenre(GenreDTO genre);
+        IEnumerable<BookDetails> GetAllBooks(int booksLimit);
 
-        ServiceResponse DeleteBook(BookDetailsDTO bookDetails);
-        ServiceResponse DeleteBook(BookDTO book);
+        ServiceResponse SaveBookDetails(BookDetails bookDetails);
+        ServiceResponse SaveAuthor(Author author);
+        ServiceResponse SaveBookAuthor(BookAuthor bookAuthor);
+        ServiceResponse SaveBookAuthor(int bookID, int authorID);
+        ServiceResponse SaveGenre(Genre genre);
+        ServiceResponse SaveBookGenre(BookGenre genre);
+
+        ServiceResponse DeleteBook(BookDetails bookDetails);
+        ServiceResponse DeleteBook(Book book);
         ServiceResponse DeleteBook(int bookID);
 
-        ServiceResponse DeleteGenre(GenreDTO genre);
+        ServiceResponse DeleteGenre(Genre genre);
         ServiceResponse DeleteGenre(int genreID);
 
-        ServiceResponse DeleteAuthor(AuthorDTO author);
+        ServiceResponse DeleteAuthor(Author author);
         ServiceResponse DeleteAuthor(int authorID);
+
+         IEnumerable<BookDetails> SearchBooks(Search search);
+         IEnumerable<Author> GetAllAuthors();
+
 
     }
 }
