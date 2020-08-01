@@ -27,7 +27,7 @@ http://api.bookshop.lab101.com/api/bookshop/books/save - Use Post method. Send b
 
 My API was hosted on my local machine.
 
-In your IIS management, add a new website with an URL http://api.bookshop.lab101.com. It can be something else. Nothing of the features in the API are hard coded to use that URL.
+In your IIS management, add a new website with an URL pointing at http://api.bookshop.lab101.com. It can be something else. None of the features in the API are hard coded to use this URL.
 
 Edit your hosts file to point 127.0.0.1 to point at http://api.bookshop.lab101.com (or your alterntaive URL).
 
