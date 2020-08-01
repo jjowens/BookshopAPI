@@ -1,0 +1,218 @@
+{
+	"info": {
+		"_postman_id": "22e1ee8a-778e-4608-bfa5-d0ab708d6efd",
+		"name": "Bookshop API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Search Books",
+			"item": [
+				{
+					"name": "Search Books",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"BookID\": 12\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://api.bookshop.lab101.com/api/bookshop/books/save",
+							"protocol": "http",
+							"host": [
+								"api",
+								"bookshop",
+								"lab101",
+								"com"
+							],
+							"path": [
+								"api",
+								"bookshop",
+								"books",
+								"save"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Search Books By BookID",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"BookID\": 12\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://api.bookshop.lab101.com/api/bookshop/books/search",
+							"protocol": "http",
+							"host": [
+								"api",
+								"bookshop",
+								"lab101",
+								"com"
+							],
+							"path": [
+								"api",
+								"bookshop",
+								"books",
+								"search"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Get Genres",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://api.bookshop.lab101.com/api/bookshop/genres",
+					"protocol": "http",
+					"host": [
+						"api",
+						"bookshop",
+						"lab101",
+						"com"
+					],
+					"path": [
+						"api",
+						"bookshop",
+						"genres"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Authors",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://api.bookshop.lab101.com/api/bookshop/authors",
+					"protocol": "http",
+					"host": [
+						"api",
+						"bookshop",
+						"lab101",
+						"com"
+					],
+					"path": [
+						"api",
+						"bookshop",
+						"authors"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Save Book details",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"Book\": {\r\n        \"BookID\": 0,\r\n        \"Title\": \"Pirates Latitudes\",\r\n        \"PublishYear\": 2001,\r\n        \"Subtitle\": \"\",\r\n        \"Price\": 12.99\r\n    },\r\n\t\"Authors\":\r\n\t[\r\n\t\t{\r\n            \"FirstName\": \"Michael\",\r\n            \"LastName\": \"Crichton\"\r\n\t\t}\r\n\t],\r\n    \"Genres\":\r\n    [\r\n        {\r\n            \"GenreName\": \"Adventure\"\r\n        },\r\n        {\r\n            \"GenreName\": \"Crime\"\r\n        },\r\n        {\r\n            \"GenreName\": \"Pirates\"\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://api.bookshop.lab101.com/api/bookshop/books/save",
+					"protocol": "http",
+					"host": [
+						"api",
+						"bookshop",
+						"lab101",
+						"com"
+					],
+					"path": [
+						"api",
+						"bookshop",
+						"books",
+						"save"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Book",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "17",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://api.bookshop.lab101.com/api/bookshop/books/book/delete",
+					"protocol": "http",
+					"host": [
+						"api",
+						"bookshop",
+						"lab101",
+						"com"
+					],
+					"path": [
+						"api",
+						"bookshop",
+						"books",
+						"book",
+						"delete"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Books",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://api.bookshop.lab101.com/api/bookshop/books",
+					"protocol": "http",
+					"host": [
+						"api",
+						"bookshop",
+						"lab101",
+						"com"
+					],
+					"path": [
+						"api",
+						"bookshop",
+						"books"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

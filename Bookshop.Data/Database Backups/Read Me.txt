@@ -1,0 +1,4 @@
+Those database file(s) were backed from SQL Server Management Studio v 17.9
+
+If the backup doesn't work when you restore it or similar, try using the "Create Database.sql" script from SQL Scripts.
+
